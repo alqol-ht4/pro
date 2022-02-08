@@ -1,0 +1,49 @@
+<LessonsWidget>:
+    orientation: "vertical"
+<TestsWidget>:
+    orientation: "vertical"
+
+
+
+<RootWidget>:
+    id: manager
+
+    Screen:
+
+        MDBottomNavigation:
+            id: bottom_navigation
+
+            MDBottomNavigationItem:
+                name: 'screen 1'
+                text: 'Lessons'
+                icon: 'language-python'
+
+                LessonsWidget:
+                    id: lessons_widget
+
+                
+            MDBottomNavigationItem:
+                name: 'screen 2'
+                text: 'tests'
+                icon: 'language-python'
+
+                TestsWidget:
+                    id: test_widget
+
+            
+            MDBottomNavigationItem:
+                name: 'screen 3'
+                text: 'favorites'
+                icon: 'language-python'
+
+
+
+            MDBottomNavigationItem:
+                name: 'screen 4'
+                text: 'settings'
+                icon: 'language-python'
+
+                SettingsWidget:
+
+
+
